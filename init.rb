@@ -1,4 +1,4 @@
 directory '/tmp/message'
-chef do
+apt_package 'chef' do
 	action :install
 end
