@@ -1,4 +1,5 @@
 directory '/tmp/message'
-apt_package 'chef' do
-	action :install
+
+file "/tmp/message/motd" do
+	content Time.new.inspect
 end
